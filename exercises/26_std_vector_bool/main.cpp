@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
     std::cout << "sizeof(std::vector<bool>) = " << sizeof(std::vector<bool>) << std::endl;
     // 课程使用 Ubuntu CI 评测，此处按平台填写 40；
     // 但Windows MSVC 下通常为 32，因此在我的本地运行可能在此断言失败。
-    // ASSERT(sizeof(vec) == 32, "Fill in the correct value.");
+    ASSERT(sizeof(vec) == 32, "Fill in the correct value.");
     ASSERT(sizeof(vec) == 40, "Fill in the correct value.");
     {
         vec[20] = false;
